@@ -136,8 +136,8 @@ int main() {
         }
     }
     // выводим шахматную доску на экран
-    for (int i = 8; i >= 1; i--) {
-        for (int j = 1; j <= 8; j++) {
+    for (int j = 8; j >= 1; j--) {
+        for (int i = 1; i <= 8; i++) {
             if (i == k && j == l) {
                 cout << figure[0] << " ";
             }
@@ -145,10 +145,10 @@ int main() {
                 cout << "X ";
             }
             else if (isWhite(i, j)) {
-                cout << "W ";
+                cout << "# ";
             }
             else {
-                cout << "B ";
+                cout << "# ";
             }
         }
         cout << endl;
