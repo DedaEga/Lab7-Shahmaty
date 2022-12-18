@@ -1,0 +1,46 @@
+Thu Dec  1 23:22:46 2022
+Vvedite koordinatu x dlya pervoj figury(schitaya dosku I chetvert'yu sistemy koordinat): 
+Thu Dec  1 23:22:46 2022
+Pol'zovatel' vvel: 3
+Thu Dec  1 23:22:50 2022
+Vvedite koordinatu y dlya pervoj figury(schitaya dosku I chetvert'yu sistemy koordinat): 
+Thu Dec  1 23:22:50 2022
+Pol'zovatel' vvel: 6
+Thu Dec  1 23:22:50 2022
+Vvedite tip figury, dlya etogo vyberite cifru
+Thu Dec  1 23:22:50 2022
+1 - ferz'
+Thu Dec  1 23:22:50 2022
+2 - lad'ya
+Thu Dec  1 23:22:50 2022
+3 - slon
+Thu Dec  1 23:22:50 2022
+4 - kon'
+Thu Dec  1 23:22:57 2022
+Vvedite koordinatu x dlya vtoroj figury(schitaya dosku I chetvert'yu sistemy koordinat): 
+Thu Dec  1 23:23:17 2022
+Pol'zovatel' vvel: 5
+Thu Dec  1 23:23:17 2022
+Vvedite koordinatu y dlya vtoroj figury(schitaya dosku I chetvert'yu sistemy koordinat): 
+Thu Dec  1 23:23:19 2022
+Pol'zovatel' vvel: 4
+Thu Dec  1 23:23:19 2022
+Vvedite tip figury, dlya etogo vyberite cifru
+Thu Dec  1 23:23:19 2022
+1 - ferz'
+Thu Dec  1 23:23:19 2022
+2 - lad'ya
+Thu Dec  1 23:23:19 2022
+3 - slon
+Thu Dec  1 23:23:19 2022
+4 - kon'
+Thu Dec  1 23:23:21 2022
+Pol'zovatel' vvel: 1
+Thu Dec  1 23:23:21 2022
+Pervaya figura stoit na beloj kletke
+Thu Dec  1 23:23:21 2022
+Vtoraya figura stoit na beloj kletke
+Thu Dec  1 23:23:21 2022
+Obe figury stoyat na kletkah odinakovogo cveta
+Thu Dec  1 23:23:21 2022
+Vtoraya figura nahoditsya pod udarom ferzya
