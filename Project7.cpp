@@ -38,6 +38,9 @@ bool canReachInOneMove(string figure, int x1, int y1, int x2, int y2) {
     else if (figure == "queen") {
         return abs(x1 - x2) == abs(y1 - y2) || x1 == x2 || y1 == y2;
     }
+    else if (figure == "knight") {
+        return (abs(x1 - x2) == 2 && abs(y1 - y2) == 1 || abs(x1 - x2) == 1 && abs(y1 - y2) == 2);
+    }
     else {
         return false;
     }
@@ -47,8 +50,8 @@ bool canReachInOneMove(string figure, int x1, int y1, int x2, int y2) {
 bool canReachInTwoMoves(string figure, int x1, int y1, int x2, int y2) {
     if (figure == "bishop") {
         if (abs(x1 - x2) == abs(y1 - y2)) {
-            // если расстояние между клетками по диагонали равно расстоянию между ферзем и клеткой (m, n) по диагонали,
-            // то ферзь может попасть на клетку (m, n) за два хода, перепрыгивая через клетку (x2, y2)
+            // если расстояние между клетками по диагонали равно расстоянию между слоном и клеткой (m, n) по диагонали,
+            // то слон может попасть на клетку (m, n) за два хода, перепрыгивая через клетку (x2, y2)
             return true;
         }
         else {
@@ -57,7 +60,7 @@ bool canReachInTwoMoves(string figure, int x1, int y1, int x2, int y2) {
     }
     else if (figure == "rook") {
         if (x1 == x2 || y1 == y2) {
-            // если ферзь находится на одной вертикали или горизонтали с клеткой (m, n),
+            // если ладья находится на одной вертикали или горизонтали с клеткой (m, n),
             // то он может попасть на клетку (m, n) за два хода, перепрыгивая через клетку (x2, y2)
             return true;
         }
@@ -69,6 +72,15 @@ bool canReachInTwoMoves(string figure, int x1, int y1, int x2, int y2) {
         if (abs(x1 - x2) == abs(y1 - y2) || x1 == x2 || y1 == y2) {
             // если расстояние между клетками по диагонали равно расстоянию между ферзем и клеткой (m, n) по диагонали, или ферзь находится на одной вертикали или горизонтали с клеткой (m, n),
             // то ферзь может попасть на клетку (m, n) за два хода, перепрыгивая через клетку (x2, y2)
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else if (figure == "knight") {
+        if (abs(x1 - x2) == 2 && abs(y1 - y2) == 1 || abs(x1 - x2) == 1 && abs(y1 - y2) == 2) {
+            // если расстояние между конем и фигурой соответствует ходу коня, то конь может достать фигуру за 2 хода
             return true;
         }
         else {
