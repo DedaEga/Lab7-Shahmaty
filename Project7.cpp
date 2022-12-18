@@ -1,10 +1,31 @@
 ﻿#include <iostream>
 #include <string>
+#include <ctime>
+#include <fstream>
+#include <chrono>
 
 using namespace std;
+void GetInput(int& x) {
+    fstream out;
+    string path = "logs.txt";
+    auto now = std::chrono::system_clock::now();
+    std::time_t end_time = std::chrono::system_clock::to_time_t(now);
+    out.open(path, fstream::in | fstream::out | fstream::app);
+#pragma warning(suppress : 4996)
+    out << std::ctime(&end_time) << "Pol'zovatel' vvel: " << x << endl;
+}
+void GetOutput(string& outp) {
+    fstream out;
+    string path = "logs.txt";
+    auto now = std::chrono::system_clock::now();
+    std::time_t end_time = std::chrono::system_clock::to_time_t(now);
+    out.open(path, fstream::in | fstream::out | fstream::app);
+#pragma warning(suppress : 4996)
+    out << std::ctime(&end_time) << outp << endl;
+}
 
 // функция для определения цвета клетки
-bool isWhite(int x, int y) {
+bool isColor(int x, int y) {
     return (x + y) % 2 == 0;
 }
 
@@ -82,37 +103,57 @@ bool canReachInTwoMoves(string figure, int x1, int y1, int x2, int y2) {
 
 int main() {
     int k, l, m, n;
-    string figure;
+    string figure, outp;
     // вводим координаты клеток и фигуру с консоли
-    cout << "Enter coordinates of the first cell (k, l): ";
+    outp = "Enter coordinates of the first cell (k, l): ";
+    cout << outp;
+    GetOutput(outp);
     cin >> k >> l;
-    cout << "Enter coordinates of the second cell (m, n): ";
+    GetInput(k);
+    GetInput(l);
+    outp = "Enter coordinates of the second cell (m, n): ";
+    cout << outp;
+    GetOutput(outp);
     cin >> m >> n;
-    cout << "Enter the name of the figure (bishop, rook, queen, knight): ";
+    GetInput(m);
+    GetInput(n);
+    outp = "Enter the name of the figure (bishop, rook, queen, knight): ";
+    cout << outp;
+    GetOutput(outp);
     cin >> figure;
 
     // вызываем функцию для определения цвета клеток
-    bool isSameColor = isWhite(k, l) == isWhite(m, n);
+    bool isSameColor = isColor(k, l) == isColor(m, n);
     if (isSameColor) {
-        cout << "The cells have the same color." << endl;
+        outp = "The cells have the same color.";
+        cout << outp << endl;
+        GetOutput(outp);
     }
     else {
-        cout << "The cells have different colors." << endl;
+        outp = "The cells have different colors.";
+        cout << outp << endl;
+        GetOutput(outp);
     }
 
     // вызываем функцию для определения, угрожает ли фигура клетке
     bool isFigureThreatening = isThreatened(figure, k, l, m, n);
     if (isFigureThreatening) {
-        cout << "The figure is threatening the cell." << endl;
+        outp = "The figure is threatening the cell.";
+        cout << outp << endl;
+        GetOutput(outp);
     }
     else {
-        cout << "The figure is not threatening the cell." << endl;
+        outp = "The figure is not threatening the cell.";
+        cout << outp << endl;
+        GetOutput(outp);
     }
 
     // вызываем функцию для определения, может ли фигура достиччь клетку за один ход
     bool OneMove = canReachInOneMove(figure, k, l, m, n);
     if (OneMove) {
-        cout << "The figure can reach the cell in one move." << endl;
+        outp = "The figure can reach the cell in one move.";
+        cout << outp << endl;
+        GetOutput(outp);
     }
     else {
         // если фигура не может достичь клетку за один ход, то пытаемся найти клетку, через которую можно перепрыгнуть
@@ -129,22 +170,26 @@ int main() {
             }
         }
         if (canReachInTwoMoves) {
-            cout << "The figure can reach the cell in two moves by jumping through the cell (" << x2 << ", " << y2 << ")." << endl;
+            outp = "The figure can reach the cell in two moves by jumping through the cell (";
+            cout << outp << x2 << ", " << y2 << ")." << endl;
+            GetOutput(outp);
         }
         else {
-            cout << "The figure cannot reach the cell in two moves." << endl;
+            outp = "The figure cannot reach the cell in two moves.";
+            cout << outp << endl;
+            GetOutput(outp);
         }
     }
     // выводим шахматную доску на экран
-    for (int i = 8; i >= 1; i--) {
-        for (int j = 1; j <= 8; j++) {
+    for (int j = 8; j >= 1; j--) {
+        for (int i = 1; i <= 8; i++) {
             if (i == k && j == l) {
                 cout << figure[0] << " ";
             }
             else if (i == m && j == n) {
                 cout << "X ";
             }
-            else if (isWhite(i, j)) {
+            else if (isColor(i, j)) {
                 cout << "W ";
             }
             else {

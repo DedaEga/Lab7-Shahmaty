@@ -1,46 +1,100 @@
-Thu Dec  1 23:22:46 2022
-Vvedite koordinatu x dlya pervoj figury(schitaya dosku I chetvert'yu sistemy koordinat): 
-Thu Dec  1 23:22:46 2022
-Pol'zovatel' vvel: 3
-Thu Dec  1 23:22:50 2022
-Vvedite koordinatu y dlya pervoj figury(schitaya dosku I chetvert'yu sistemy koordinat): 
-Thu Dec  1 23:22:50 2022
-Pol'zovatel' vvel: 6
-Thu Dec  1 23:22:50 2022
-Vvedite tip figury, dlya etogo vyberite cifru
-Thu Dec  1 23:22:50 2022
-1 - ferz'
-Thu Dec  1 23:22:50 2022
-2 - lad'ya
-Thu Dec  1 23:22:50 2022
-3 - slon
-Thu Dec  1 23:22:50 2022
-4 - kon'
-Thu Dec  1 23:22:57 2022
-Vvedite koordinatu x dlya vtoroj figury(schitaya dosku I chetvert'yu sistemy koordinat): 
-Thu Dec  1 23:23:17 2022
-Pol'zovatel' vvel: 5
-Thu Dec  1 23:23:17 2022
-Vvedite koordinatu y dlya vtoroj figury(schitaya dosku I chetvert'yu sistemy koordinat): 
-Thu Dec  1 23:23:19 2022
-Pol'zovatel' vvel: 4
-Thu Dec  1 23:23:19 2022
-Vvedite tip figury, dlya etogo vyberite cifru
-Thu Dec  1 23:23:19 2022
-1 - ferz'
-Thu Dec  1 23:23:19 2022
-2 - lad'ya
-Thu Dec  1 23:23:19 2022
-3 - slon
-Thu Dec  1 23:23:19 2022
-4 - kon'
-Thu Dec  1 23:23:21 2022
+Sun Dec 18 15:41:21 2022
+Enter coordinates of the first cell (k, l): 
+Sun Dec 18 15:41:26 2022
 Pol'zovatel' vvel: 1
-Thu Dec  1 23:23:21 2022
-Pervaya figura stoit na beloj kletke
-Thu Dec  1 23:23:21 2022
-Vtoraya figura stoit na beloj kletke
-Thu Dec  1 23:23:21 2022
-Obe figury stoyat na kletkah odinakovogo cveta
-Thu Dec  1 23:23:21 2022
-Vtoraya figura nahoditsya pod udarom ferzya
+Sun Dec 18 15:41:26 2022
+Pol'zovatel' vvel: 1
+Sun Dec 18 15:41:26 2022
+Enter coordinates of the second cell (m, n): 
+Sun Dec 18 15:41:35 2022
+Pol'zovatel' vvel: 3
+Sun Dec 18 15:41:35 2022
+Pol'zovatel' vvel: 8
+Sun Dec 18 15:41:35 2022
+Enter the name of the figure (bishop, rook, queen, knight): 
+Sun Dec 18 15:41:42 2022
+The cells have different colors.
+Sun Dec 18 15:41:42 2022
+The figure is not threatening the cell.
+Sun Dec 18 15:41:42 2022
+The figure can reach the cell in two moves by jumping through the cell (
+Sun Dec 18 15:42:23 2022
+Enter coordinates of the first cell (k, l): 
+Sun Dec 18 15:42:27 2022
+Pol'zovatel' vvel: 3
+Sun Dec 18 15:42:27 2022
+Pol'zovatel' vvel: 3
+Sun Dec 18 15:42:27 2022
+Enter coordinates of the second cell (m, n): 
+Sun Dec 18 15:42:42 2022
+Pol'zovatel' vvel: 8
+Sun Dec 18 15:42:42 2022
+Pol'zovatel' vvel: 5
+Sun Dec 18 15:42:42 2022
+Enter the name of the figure (bishop, rook, queen, knight): 
+Sun Dec 18 15:42:46 2022
+The cells have different colors.
+Sun Dec 18 15:42:46 2022
+The figure is not threatening the cell.
+Sun Dec 18 15:42:46 2022
+The figure can reach the cell in two moves by jumping through the cell (
+Sun Dec 18 15:44:27 2022
+Enter coordinates of the first cell (k, l): 
+Sun Dec 18 15:44:32 2022
+Pol'zovatel' vvel: 2
+Sun Dec 18 15:44:32 2022
+Pol'zovatel' vvel: 3
+Sun Dec 18 15:44:32 2022
+Enter coordinates of the second cell (m, n): 
+Sun Dec 18 15:44:36 2022
+Pol'zovatel' vvel: 4
+Sun Dec 18 15:44:36 2022
+Pol'zovatel' vvel: 5
+Sun Dec 18 15:44:36 2022
+Enter the name of the figure (bishop, rook, queen, knight): 
+Sun Dec 18 15:44:43 2022
+The cells have the same color.
+Sun Dec 18 15:44:43 2022
+The figure is threatening the cell.
+Sun Dec 18 15:44:43 2022
+The figure can reach the cell in one move.
+Sun Dec 18 15:46:00 2022
+Enter coordinates of the first cell (k, l): 
+Sun Dec 18 15:46:01 2022
+Pol'zovatel' vvel: 2
+Sun Dec 18 15:46:01 2022
+Pol'zovatel' vvel: 3
+Sun Dec 18 15:46:01 2022
+Enter coordinates of the second cell (m, n): 
+Sun Dec 18 15:46:02 2022
+Pol'zovatel' vvel: 4
+Sun Dec 18 15:46:02 2022
+Pol'zovatel' vvel: 5
+Sun Dec 18 15:46:02 2022
+Enter the name of the figure (bishop, rook, queen, knight): 
+Sun Dec 18 15:46:07 2022
+The cells have the same color.
+Sun Dec 18 15:46:07 2022
+The figure is threatening the cell.
+Sun Dec 18 15:46:07 2022
+The figure can reach the cell in one move.
+Sun Dec 18 15:48:59 2022
+Enter coordinates of the first cell (k, l): 
+Sun Dec 18 15:49:03 2022
+Pol'zovatel' vvel: 1
+Sun Dec 18 15:49:03 2022
+Pol'zovatel' vvel: 2
+Sun Dec 18 15:49:03 2022
+Enter coordinates of the second cell (m, n): 
+Sun Dec 18 15:49:05 2022
+Pol'zovatel' vvel: 3
+Sun Dec 18 15:49:05 2022
+Pol'zovatel' vvel: 4
+Sun Dec 18 15:49:05 2022
+Enter the name of the figure (bishop, rook, queen, knight): 
+Sun Dec 18 15:49:09 2022
+The cells have the same color.
+Sun Dec 18 15:49:09 2022
+The figure is threatening the cell.
+Sun Dec 18 15:49:09 2022
+The figure can reach the cell in one move.
