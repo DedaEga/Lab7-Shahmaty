@@ -189,11 +189,11 @@ int main() {
             else if (i == m && j == n) {
                 cout << "X ";
             }
-            else if (isColor(i, j)) {
-                cout << "W ";
+            else if (isWhite(i, j)) {
+                cout << "# ";
             }
             else {
-                cout << "B ";
+                cout << "# ";
             }
         }
         cout << endl;
