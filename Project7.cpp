@@ -145,7 +145,7 @@ int main() {
                 cout << "X ";
             }
             else if (isWhite(i, j)) {
-                cout << "# ";
+                cout << "* ";
             }
             else {
                 cout << "# ";
