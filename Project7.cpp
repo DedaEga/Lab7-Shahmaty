@@ -25,7 +25,7 @@ void GetOutput(string& outp) {
 }
 
 // функция для определения цвета клетки
-bool isColor(int x, int y) {
+bool isWhite(int x, int y) {
     return (x + y) % 2 == 0;
 }
 
@@ -123,7 +123,7 @@ int main() {
     cin >> figure;
 
     // вызываем функцию для определения цвета клеток
-    bool isSameColor = isColor(k, l) == isColor(m, n);
+    bool isSameColor = isWhite(k, l) == isWhite(m, n);
     if (isSameColor) {
         outp = "The cells have the same color.";
         cout << outp << endl;
@@ -190,7 +190,7 @@ int main() {
                 cout << "X ";
             }
             else if (isWhite(i, j)) {
-                cout << "# ";
+                cout << "* ";
             }
             else {
                 cout << "# ";
