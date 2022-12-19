@@ -6,6 +6,6 @@
 ## Использование
 Открывать программу через любой редактор C++ (желательно Visual Studio). Для запуска программы открыть файл Project7.cpp. Для дальнейшего использования следовать командам программы.
 ## Скриншоты
-![image](https://user-images.githubusercontent.com/113821959/208297860-39665f4e-d716-47c6-b11d-f90e0e3b36d6.png)
-![image](https://user-images.githubusercontent.com/113821959/208297903-63a01fce-0293-49ee-a196-6f27f07fe6e2.png)
-![image](https://user-images.githubusercontent.com/113821959/208298907-028cce07-b55b-4872-b236-041d429deb34.png)
+![image](https://user-images.githubusercontent.com/113821959/208490282-84313921-0c24-4c9b-a82b-50c4db2d7859.png)
+![image](https://user-images.githubusercontent.com/113821959/208490325-afd78188-aa2e-4c4b-87c8-0d6c078c5096.png)
+![image](https://user-images.githubusercontent.com/113821959/208490379-51076ffa-1a0f-4b46-b446-f7b138522616.png)
